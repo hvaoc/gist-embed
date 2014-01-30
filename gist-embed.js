@@ -18,7 +18,6 @@
 
       // make block level so loading text shows properly
       $elem.css('display', 'block');
-      alert($elem.attr('data-gist-id'));
       id = $elem.attr('data-gist-id') || '';
       file = $elem.attr('data-gist-file');
       hideFooterOption = $elem.attr('data-gist-hide-footer') === 'true';
