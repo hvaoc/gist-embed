@@ -5,7 +5,7 @@
 
   $(function() {
     // find all elements containing "data-gist-id" attribute.
-    $('[data-gist-id]').each(function() {
+    $('div.code').each(function() {
       var $elem = $(this),
         id,
         url,
@@ -18,7 +18,7 @@
 
       // make block level so loading text shows properly
       $elem.css('display', 'block');
-
+      alert($elem.attr('data-gist-id'));
       id = $elem.attr('data-gist-id') || '';
       file = $elem.attr('data-gist-file');
       hideFooterOption = $elem.attr('data-gist-hide-footer') === 'true';
